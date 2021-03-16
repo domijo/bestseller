@@ -1,0 +1,124 @@
+/*reset of my page and starting with the mobile mode*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*apply the fonts*/
+body {
+  font-family: "Shippori Mincho", sans-serif, serif;
+}
+
+/*define the width of my content*/
+.content {
+  width: 400px;
+  margin: auto;
+}
+
+.logo {
+  width: 100px;
+}
+
+/*displaying the elements of the header*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 10px;
+}
+
+/*putting space between my icons*/
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
+/*the image in background and i define the widht, height and position*/
+.card {
+  background-image: url(../images/dresse.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 500px;
+  position: relative;
+}
+
+/*displaying and positioning the titles*/
+.title2 {
+  background-color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 120px;
+  height: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-top: 5px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.about {
+  background-color: #fff;
+  width: 300px;
+  margin: auto;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+
+.subtitle {
+  text-transform: uppercase;
+}
+
+#subtitle2 {
+  text-transform: uppercase;
+  color: transparent;
+  text-shadow: 0 0 0.8px #443f3f;
+}
+
+/*here i define the rules for the desktop mode*/
+@media screen and (min-width: 700px) {
+  .content {
+    width: 900px;
+    margin: auto;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .title {
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
